@@ -3,12 +3,14 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: In naked twins problem, we identify the twin pairs in a single unit. Since we can sure that those 2 numbers will be locked in those two boxes. We can remove those digits from other boxese in the same unit.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: In order to solve Diagonal Sudoku, we perform additional constraint checking on two diagonal units.
+['A1','B2','C3','D4','E5','F6','G7','H8','I9']
 
+['A9','B8','C7','D6','E5','F4','G3','H2','I1']
 ### Install
 
 This project requires **Python 3**.
