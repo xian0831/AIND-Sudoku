@@ -191,8 +191,8 @@ def solve(grid):
     return search(values)
 
 boxes = cross(rows, cols)
-diagonal_unit_left_to_right = [['A1','B2','C3','D4','E5','F6','G7','H8','I9']]
-diagonal_unit_right_to_left = [['A9','B8','C7','D6','E5','F4','G3','H2','I1']]
+diagonal_unit_left_to_right = [[a[0]+a[1] for a in zip(rows,cols)]]
+diagonal_unit_right_to_left = [[a[0]+a[1] for a in zip(rows,cols[::-1])]]
 row_units = [cross(r, cols) for r in rows]
 column_units = [cross(rows, c) for c in cols]
 square_units = [cross(rs, cs) for rs in ('ABC','DEF','GHI') for cs in ('123','456','789')]
